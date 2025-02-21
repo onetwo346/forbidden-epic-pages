@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Story</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1>Create Your Epic Story</h1>
+    <form id="story-form">
+      <label for="genre">Genre:</label>
+      <select id="genre" name="genre">
+        <option value="fantasy">Fantasy</option>
+        <option value="sci-fi">Sci-Fi</option>
+        <option value="mystery">Mystery</option>
+        <option value="romance">Romance</option>
+      </select>
+
+      <label for="character">Main Character:</label>
+      <input type="text" id="character" name="character" placeholder="e.g., A brave knight">
+
+      <label for="setting">Setting:</label>
+      <input type="text" id="setting" name="setting" placeholder="e.g., A magical forest">
+
+      <button type="submit">Generate Story</button>
+    </form>
+
+    <div id="story-preview" class="hidden">
+      <h2>Your Story</h2>
+      <p id="generated-story"></p>
+      <button id="download-pdf">Download as PDF</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
